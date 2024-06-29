@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct TravelAppApp: App {
+    init(){
+        UITableView.appearance().backgroundColor = UIColor.clear
+    }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
